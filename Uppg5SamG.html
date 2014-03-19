@@ -1,0 +1,60 @@
+DEL 1
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Webbutveckling 3 Uppgift 1 Sam Gholizadeh</title>
+    <style>
+    </style>
+</head>
+<body>
+<!-- Skapar det element som ska hålla tabellen och ger det ett id attribut -->
+<div>
+    <table id="tabell">
+
+    </table>
+</div>
+<!-- Script som laddas när dom dokumentet har laddats klart. Scriptet innehåller
+    en for loop som itererar 10 gånger och använder javascript funktionen
+    innerHTML för att lägga till html.-->
+<script>
+    window.onload = function(){
+        for(var i = 0; i < 10; i++){
+            document.getElementById("tabell").innerHTML += "<tr>"+i+" * "+ 5 +" = "+ (i*5) +" </tr>";
+        }
+    }
+</script>
+
+</body>
+</html>
+
+Del 2
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Webbutveckling 3 Uppgift 1 Sam Gholizadeh</title>
+    <style>
+    </style>
+</head>
+<body>
+<!-- Skapar det element som ska hålla tabellen och ger det ett id attribut -->
+<div>
+    <table id="tabell">
+
+    </table>
+</div>
+<!-- Script som laddas när dom dokumentet har laddats klart. Scriptet innehåller
+en for loop som itererar 10 gånger och använder javascript funktionen
+innerHTML för att lägga till html.-->
+<script>
+    window.onload = function(){
+        var number = prompt("Ange ett tal mellan 1-10.");
+        for(var i = 0; i < 10; i++){
+            document.getElementById("tabell").innerHTML += "<tr style='border: solid black 1px;'>"+i+" * "+ number +" = "+ (i*number) +" </tr>";
+        }
+    }
+</script>
+
+</body>
+</html>

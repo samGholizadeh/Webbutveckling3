@@ -1,0 +1,24 @@
+Webbutveckling uppgift 2
+
+Del1
+Events är händelser i en applikation. Ett exemple är tex en knapptryckning. När en
+användare trycker på en knapp på hemsidan och släpper musknappen skapas en event och då
+gäller det att fånga detta så att applikationen utför något som användaren förväntar sig
+Man använder det inom JavaSript för att ändra på sidan dynamiskt eller skicka en
+förfrågan till servern.
+
+Exempelkod:
+
+window.onload = function(){
+getElementByID(#someId).onclick = function(){
+alert("En event har skapats!");
+}
+}
+
+Del2
+Varje bild har en "inbyggd" javascript funktionalitet som den fått genom att
+utvecklaren decklarerat en onmouseover attribut vilket gör så att bilden byts genom att
+scriptet byter src attributet på elementet som har id attributet original.
+Syftet med getElementById() är att kunna punktmarkera ett element i ett HTML dokument
+och använda JavaScript funktioner på den. Tex ändra på färgen när man för över musen
+på det elementet.

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Webbutveckling 3 Uppgift 1 Sam Gholizadeh</title>
+</head>
+<body>
+<!-- Script som väntar på att sidan ska laddas. Innehåller en iteration som
+    ber användaren att mata in ett tal och skriver ut resultatet. Programmet
+    körs från början om användaren inte anger något tal.-->
+<script>
+    window.onload = function(){
+        while(true){
+            var tal1 = prompt("Ange ett tal");
+            if(tal1 == null){
+                continue;
+            }
+            var tal2 = prompt("Ange ett tal till");
+            if(tal2 == null){
+                continue;
+            }
+            alert(""+tal1*tal2);
+            break;
+        }
+    }
+</script>
+
+</body>
+</html>

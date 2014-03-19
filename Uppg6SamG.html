@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Webbutveckling 3 Uppgift 1 Sam Gholizadeh</title>
+    <style>
+    </style>
+</head>
+<body>
+<!-- Table element med id attribut  -->
+<table id="tabell">
+
+</table>
+
+<!-- JavaScript som räknar ut omkrets och area på en cirkel. Beroende på den radie
+ som användaren matar in. Först så har vi window.onload som
+ väntar på att sidan ska laddas inan JavaScriptet interpreteras. Scriptet ber användaren
+ att mata in radien, räknar ut area samt omkrets, avrundar resultatet till två decimaler
+ för att sedan skriva ut reslutatet. -->
+<script>
+    var radie = window.prompt("Ange cirkelns radie i cm");
+    var area = Math.PI * Math.pow(radie, 2);
+    var omkrets = 2 * Math.PI * radie;
+    document.write("Arean är : " + Math.round(area * 100)/100 + "cm2. Omkretsen blir: " + Math.round(omkrets * 100)/100 + "cm.");
+</script>
+
+</body>
+</html>
